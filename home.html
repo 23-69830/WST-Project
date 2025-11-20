@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Coffee</title>
 
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- Font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -14,207 +18,111 @@
 <body>
 
 <header class="premium-nav">
-
-    <!-- CENTER LOGO -->
     <div class="nav-logo">
-        <img src="cafe-logo-7420534_1280.png" alt="Logo">
+        <img src="image/cafe-logo-7420534_1280.png" alt="Logo">
     </div>
 
-    <!-- ALL NAVIGATION ON THE RIGHT -->
     <nav class="nav-right">
         <a href="home.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="booking.html">Book</a>
         <a href="contact.html">Contact</a>
     </nav>
-
 </header>
 
 <!-- home -->
 <section class="home" id="home">
     <div class="content">
         <h3>Fresh Coffee in the morning</h3>
-        <p></p>
         <a class="btn">Get Yours Now</a>
     </div>
 </section>
 
 <!-- about -->
-<section class="about" id="about">
-    <div class="about-container">
-
-        <!-- LEFT SIDE TEXT -->
-        <div class="about-text">
-            <h1>From Bean to Brew<br>Our Story Begins.</h1>
-            <p>
-                At Bat Cave Café, nestled near Batangas State University,
-                our cozy café was founded on the passion for creating the 
-                perfect cup and the joy of bringing people together.
-            </p>
-            <a href="#" class="btn">Learn More</a>
+<section class="alt-section">
+    <div class="alt-container left-img">
+        <div class="alt-image-wrapper">
+            <img src="image/coffeBG.jpg" alt="Coffee">
         </div>
 
-        <!-- RIGHT SIDE IMAGES -->
-        <div class="about-images">
-            <img src="coffeBG.jpg" alt="" class="img-big">
-            <img src="coffeBG.jpg" alt="" class="img-small">
-            <img src="coffeBG.jpg" alt="" class="img-small">
+        <div class="alt-text">
+            <h2>OUR VISION</h2>
+            <p>The Malvar Bat Cave Cafe is dedicated to providing a consistently comfortable...</p>
+            <a class="alt-btn">View All →</a>
         </div>
     </div>
 </section>
 
-
-
-<!-- menu -->
-<section class="menu" id="menu">
-    <h1 class="heading">our <span>menu</span></h1>
-    <div class="box-container">
-
-        <div class="box">
-            <img src="menu1.jpg" alt="">
-            <h3>tasty and healthy</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
+<section class="alt-section">
+    <div class="alt-container right-img">
+        <div class="alt-text">
+            <h2>OUR MISSION</h2>
+            <p>To be an undisputed sanctuary and second home for the BSU community...</p>
+            <a class="alt-btn">Learn More →</a>
         </div>
 
-        <div class="box">
-            <img src="menu2.jpg" alt="">
-            <h3>tasty and healthy</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-        </div>
-
-        <div class="box">
-            <img src="menu3.jpeg" alt="">
-            <h3>tasty and healthy</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-        </div>
-
-        <div class="box">
-            <img src="menu4.jpg" alt="">
-            <h3>tasty and healthy</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-        </div>
-
-        <div class="box">
-            <img src="menu5.jpg" alt="">
-            <h3>tasty and healthy</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-        </div>
-
-        <div class="box">
-            <img src="menu6.jpg" alt="">
-            <h3>tasty and healthy</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
+        <div class="alt-image-wrapper">
+            <img src="image/coffeBG.jpg" alt="Coffee">
         </div>
     </div>
 </section>
 
-<!-- products -->
-<section class="products" id="products">
-    <h1 class="heading">our <span> products</span></h1>
+<!-- ====== Featured (polished) ====== -->
+<section class="featured" id="featured">
+  <h1 class="heading">Featured <span>Items</span></h1>
+</section>
 
-    <div class="box-container">
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="product1.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffee beans</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
-        </div>
+<section class="horizontal-section" aria-label="Featured items horizontal scroll">
+  <div class="cards-container">
+    <article class="sample-card" data-index="0">
+      <img src="image/menu1.jpg" alt="Hot Espresso">
+      <h3>Hot Espresso</h3>
+    </article>
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="product2.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffee beans</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
-        </div>
+    <article class="sample-card" data-index="1">
+      <img src="image/menu2.jpg" alt="Iced Latte">
+      <h3>Iced Latte</h3>
+    </article>
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="product3.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffee beans</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
-        </div>
+    <article class="sample-card" data-index="2">
+      <img src="image/menu3.jpeg" alt="Cappuccino">
+      <h3>Cappuccino</h3>
+    </article>
 
+    <article class="sample-card" data-index="3">
+      <img src="image/menu4.jpg" alt="Mocha Special">
+      <h3>Mocha Special</h3>
+    </article>
+  </div>
+</section>
+<!-- ================================ -->
+
+<!-- Footer -->
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h1 class="heading">contact <span> us </span></h1>
+    <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d684.0817937605731!2d121.11630822561827!3d14.091870783928593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1693895409233!5m2!1sen!2sph" allowfullscreen="" loading="lazy" class="map"></iframe>
+        <form action="">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"> </span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"> </span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"> </span>
+                <input type="number" placeholder="number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
     </div>
 </section>
 
-<section class="review" id="review">
-    <h1 class="heading"><span>Customer's</span> Review</h1>
-    <div class="box-container">
-        <div class="box">
-            <p>I recently had a fantastic meal at this coffes shop – the food was delicious 
-                and beautifully presented. The service was excellent and the ambiance 
-                was cozy and inviting.</p>
-            <img src="user1.jpg" alt="" class="user">
-            <h3>Juan Dela Cruz</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </div>
-
-        <div class="box">
-            <p>I had a great experience with this online marketplace – the selection was impressive and the prices were competitive.</p>
-            <img src="user2.jpg" alt="" class="user">
-            <h3>Juan Dela Cruz</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </div>
-
-        <div class="box">
-            <p>I visited this Coffee shop and it was fantastic – the coffee was delicious and the setting was beautiful.</p>
-            <img src="user3.jpg" alt="" class="user">
-            <h3>Juan Dela Cruz</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star-half"></i>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT SECTION REMOVED -->
-
+<!-- Footer -->
 <section class="footer">
     <div class="share">
         <a href="#" class="fab fa-facebook-f"></a>
@@ -223,13 +131,15 @@
         <a href="#" class="fab fa-linkedin"></a>
         <a href="#" class="fab fa-pinterest"></a>
     </div>
+
     <div class="links">
         <a href="#home.html">Home</a>
         <a href="#menu.html">Menu</a>
         <a href="#book.html">Book</a>
         <a href="contact.html">Contact</a>
     </div>
-    <div class="credit">created by <span>Earl Stephen Molino</span> | all rights reserved </div>
+
+    <div class="credit">created by <span>Earl Stephen Molino</span> | all rights reserved</div>
 </section>
 
 <script src="script.js"></script>
