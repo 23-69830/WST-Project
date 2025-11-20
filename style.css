@@ -269,7 +269,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(coffee-beans-with-props-making-coffee.jpg) no-repeat;
+    background: url("image/coffee-beans-with-props-making-coffee.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -330,7 +330,11 @@ section{
     line-height: 1.8;
 }
 
-
+.about {
+    padding: 80px 5%;
+    background-color: #111; /* dark aesthetic */
+    color: white;
+}
 
 .about-container {
     display: flex;
@@ -398,6 +402,149 @@ section{
     object-fit: cover;
     border-radius: 15px;
 }
+.alt-section {
+    padding: 70px 8%;
+    background: #e8d2b4; /* light coffee cream */
+}
+
+.alt-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Image wrapper (for tilt effect) */
+.alt-image-wrapper {
+    width: 50%;
+    position: relative;
+    margin-left:30px;
+}
+
+.alt-image-wrapper img {
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+    transform: rotate(-4deg);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* If image is on the right: tilt opposite direction */
+.right-img .alt-image-wrapper img {
+    transform: rotate(4deg);
+}
+
+.alt-text {
+    width: 40%;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.alt-text h2 {
+    font-size: 4rem;             /* Bigger title */
+    font-weight: 800;
+    color: #2b1d15;              /* Coffee-like dark brown */
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-family: "Playfair Display", serif;
+}
+
+.alt-text p {
+    font-size: 1.7rem;           /* Bigger paragraph text */
+    line-height: 1.7;
+    color: #3a2c23;              /* Softer brown */
+    font-weight: 400;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+.alt-btn {
+    padding: 12px 28px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    background: #3a2316;         /* Rich coffee color */
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.alt-btn:hover {
+    background: #5a3a23;
+    transform: translateY(-3px);
+}
+/* Featured Section */
+.featured {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* --- FEATURED GSAP HORIZONTAL SCROLL --- */
+.horizontal-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cards-container {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+}
+
+.sample-card {
+    height: 350px;
+    width: 500px;
+    background: #fff;
+    color: #000;
+    border-radius: 12px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.sample-card img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sample-card h3 {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: #000;
+}
+
+/* Reduce space ABOVE the footer */
+.footer {
+    margin-top: 20px !important;
+}
+
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .alt-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .alt-text, .alt-image-wrapper {
+        width: 100%;
+    }
+
+    .alt-image-wrapper img {
+        transform: rotate(0deg);
+    }
+}
+
 
 /* Responsive */
 @media(max-width: 768px) {
